@@ -1,0 +1,16 @@
+<head>
+ <meta charset="utf-8">
+    <link href="https://d3-geomap.github.io//d3-geomap/css/d3.geomap.css" rel="stylesheet">
+    <script src="https://d3-geomap.github.io//d3-geomap/vendor/d3.geomap.dependencies.min.js"></script>
+    <script src="https://d3-geomap.github.io//d3-geomap/js/d3.geomap.min.js"></script>
+
+</head>
+
+<body>
+<div id="map"></div>
+<script>
+var map = d3.geomap().geofile('https://github.com/marcosbenaion/Choropleth-Test/blob/master/bairrosCheckpointParqueVerde.json');
+
+d3.select('#map')
+.call(map.draw, map);
+</script>
